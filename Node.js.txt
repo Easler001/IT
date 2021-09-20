@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js 導入まとめ</title>
+</head>
+<body>
+    <h1>Node.js 導入まとめ</h1>
+    <p>Node.jsとは<br>
+       サーバーサイド(ユーザーの視覚的ではない部分(裏側)の部分の処理をしているプログラミング)で動くJavaScript<br>
+    </p>
+
+    <p>導入(環境構築)</p>
+
+    <p>Node.jsはHTML、CSS、 JSと違って環境構築しないといけない。(デフォルトで作成されているわけではないのでその環境を作らないといけない。)</p>
+
+    <p>使用ツール…Nodebrew(Node.jsをインストールするだけでなく、バージョン管理することもできるツール)</p>
+    <p>※Homebrewを使用するという方法もあるが、Node.jsを使うだけなら使わなくていい!</p>
+
+    <p>①公式HPにアクセス→GitHubのページがあるのでジャンプ。(同時進行でターミナル起動)</p>
+
+    <p>GitHubページをスクロールすると、<br>
+        README.md<br>
+        nodebrew<br>
+        <br>
+        <br>
+        Install<br>
+        Install with curl.<br>
+        <br>
+        $ curl -L git.io/nodebrew | perl - setup←これをコピーする!!<br>
+        Or, download and setup.</p>
+
+    <p>②　①でコピーしたものを(curl -L git.io/nodebrew | perl - setup)ターミナルにペーストする!</p>
+    <p>☆ポイント☆curlというコマンドは、httpリクエストを通してサーバーにアクセスしてダウンロード/送るコマンド</p>
+    <p>入力すると、データがぞろぞろ表示されていく。すると…<br>
+        ========================================<br>
+        Export a path to nodebrew:<br>
+         <br>
+        export PATH=$HOME/.nodebrew/current/bin:$PATH<br>
+        ========================================<br>
+        と言う感じに出てくる!
+       </p>
+
+    <p>そうしたら、上で出てきたexport PATH=$HOME/.nodebrew/current/bin:$PATHを<br>
+       そのままターミナル上に貼り付ける</p>
+    <p>☆ポイント☆ここでコピペしたモノは、Nodebrewのパスを通している。</p>
+
+    <p>③Nodebrewを使ってNode.jsをインストールする</p>
+
+    <p>上述のGitHubのページからnodebrew install-binaryを見つけてインストール<br>
+       コマンドは2パターン<br>
+       nodebrew install-binary latest…一番新しいバージョン<br>
+       nodebrew install-binary stable…安定版の中で一番新しいバージョン(初心者はこっち推奨)</p>
+
+    <p>Node.jsのバージョン確認と指定</p>
+
+    <p>nodebrew lsで使用バージョンが確認できる<br>
+        ☆ポイント current:noneと表示された場合は、使用するNode.JSのバージョンが指定されていない状態を指す☆</p>
+
+    <p>バージョン指定:nodebrew use 16.1.1←数字は実際のバージョンの一例</p>
+</body>
+</html>

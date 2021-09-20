@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Linux</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Hiragino Mincho ProN'; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 24.0px 'Hiragino Mincho ProN'; font-kerning: none}
+    span.s3 {font: 12.0px Times; font-kerning: none}
+    span.s4 {font: 12.0px 'Hiragino Mincho ProN'; font-kerning: none}
+    span.s5 {font: 18.0px 'Hiragino Mincho ProN'; font-kerning: none}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Linux</b></span><span class="s2"><b>という</b></span><span class="s1"><b>OS</b></span><span class="s2"><b>について</b></span></h1>
+<p class="p2"><span class="s3">(1)</span><span class="s1">ソフトウェアについて</span></p>
+<p class="p3"><span class="s4">ソフトウェアは基本ソフトウェア</span><span class="s1">(=Operating System(OS))</span><span class="s4">と応用ソフトウェアの２種類がある。</span><span class="s1"><br>
+ex.Windows,Linux,macOS X …</span><span class="s4">基本ソフトウェア</span><span class="s1"><br>
+ex.Word,Excel,PowerPoint…</span><span class="s4">応用ソフトウェア</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s3">(2)</span><span class="s1">基本ソフトウェア</span><span class="s3">(OS)</span><span class="s1">の役割</span></p>
+<p class="p2"><span class="s1">応用ソフトウェアの管理、資源</span><span class="s3">(=</span><span class="s1">機能</span><span class="s3">)</span><span class="s1">の提供</span><span class="s3"><br>
+ex. </span><span class="s1">応用ソフトウェアを利用する際のツールバーや確認メッセージ等を用意したりする。</span><span class="s3"><br>
+(</span><span class="s1">毎回アプリ側がこれらを使用時に自前で用意してたらアプリ自体が重くなってしまう</span><span class="s3">)<br>
+ex.</span><span class="s1">「機能の提供」</span><span class="s3">…</span><span class="s1">例えばマルチでアプリを動かそうとしてそれらが動いてるのは、基本ソフトウェアがそれらを瞬時に切り替えてるから。本来コンピュータは１つの処理しか同時の処理が出来ない。</span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">(3)Linux</span><span class="s4">のプログラム</span></p>
+<p class="p2"><span class="s3">Linux</span><span class="s1">のプログラムで特徴的なのはそのライセンス</span><span class="s3">(</span><span class="s1">許可、認可</span><span class="s3">)</span><span class="s1">形式であり、</span><span class="s3"><br>
+GPL(GNU General Public License: GNU </span><span class="s1">一般公衆利用許諾</span><span class="s3">) </span><span class="s1">というライセンス形式が採用されている。</span><span class="s3"><br>
+</span><span class="s1">その特徴は、</span><span class="s3"><br>
+</span><span class="s1">①プログラムを実行する自由</span><span class="s3"><br>
+</span><span class="s1">②ソースの改変の自由</span><span class="s3"><br>
+</span><span class="s1">③利用、再配布の自由</span><span class="s3"><br>
+</span><span class="s1">④改良したプログラムをリリースする権利</span><span class="s3"><br>
+</span><span class="s1">これらは、</span><span class="s3">GPL</span><span class="s1">ライセンスが無償かつ自由に利用、改変できるという性質を持つため可能としたものである。</span><span class="s3"><br>
+</span><span class="s1">また、</span><span class="s3">GPL</span><span class="s1">ライセンスを有したソフトウェアをベースとしたソフトウェアを一般に公開する場合、</span><span class="s3"><br>
+</span><span class="s1">要求があればソフトウェアのソースを公開しなくてはいけない（</span><span class="s3">=</span><span class="s1">コピーレフト）という絶対的な条件がある。</span><span class="s3"><br>
+</span><span class="s1">このスタイルの結果</span><span class="s3">Linux</span><span class="s1">は特定の個人、組織に独占されず、利用者全てがその恩恵を受け発展してきた。</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s5"><b>②</b></span><span class="s1"><b>Linux</b></span><span class="s5"><b>の特徴</b></span></h2>
+<p class="p2"><span class="s3">(1)</span><span class="s1">カーネルランドとユーザーランド</span></p>
+<p class="p2"><span class="s1">ソフトウェアの中の基本ソフトウェアは「カーネル」と「ユーザーランド」と言う２つの領域に分けられる。</span><span class="s3"><br>
+</span><span class="s1">カーネルは最も中心的な機能を受け持つ部分であり、ハードウェアと直接やりとり等行う。</span><span class="s3"><br>
+</span><span class="s1">ここでは、ハードウェアの違いを吸収して、プログラムがどんなハードウェア上でも同じように動作する役割がある。</span><span class="s3"><br>
+</span><span class="s1">ユーザーランドは</span><span class="s3">OS</span><span class="s1">が動作するのに必要な、カーネル意外の部分のこと。ファイルシステムやファイル操作コマンド、シェル等基本的なソフトウェア群を指す。</span></p>
+<p class="p2"><span class="s1">イメージ図</span></p>
+<p class="p5"><span class="s1"><img src="file:///download.jpg" alt="download.jpg"></span></p>
+<p class="p3"><span class="s4">出典</span><span class="s1">:Linux</span><span class="s4">標準教科書　</span><span class="s1">2012-10-01</span><span class="s4">版</span></p>
+<p class="p2"><span class="s3">(2)</span><span class="s1">動作、操作について</span></p>
+<p class="p2"><span class="s3">Linux</span><span class="s1">は基本コマンドで操作し、コマンドはユーザーランドで動作する。また、</span><span class="s3">Windows</span><span class="s1">や</span><span class="s3">Mac</span><span class="s1">等のようにマウス操作をするには、</span><span class="s3">X Window System</span><span class="s1">といったデスクトップ環境を導入する必要がある。</span></p>
+<p class="p2"><span class="s3">(3)</span><span class="s1">ディストリビューションとパッケージ</span></p>
+<p class="p2"><span class="s3">Linux</span><span class="s1">は当初インストール作業が非常に困難だったので、様々な団体で使用上必要なプログラムをまとめ、手軽なインストールを実現させた。</span><span class="s3">,<br>
+</span><span class="s1">これが</span><span class="s3">Linux</span><span class="s1">ディストリビューション</span><span class="s3">(distribution:</span><span class="s1">配給、分配</span><span class="s3">)</span><span class="s1">と言い、開発団体は</span><span class="s3">Linux</span><span class="s1">ディストリビューターと呼ばれた。</span></p>
+<p class="p2"><span class="s1">パッケージは</span><span class="s3">Linux</span><span class="s1">に対し追加機能を提供するもの。大きな問題として、応用ソフトウェアの実行を</span><span class="s3">Linux </span><span class="s1">上で行なうには、</span><span class="s3"><br>
+</span><span class="s1">ソースをダウンロードして自らビルド</span><span class="s3">(</span><span class="s1">プログラミング言語で書かれたソースコードなどを元に実行可能ファイルや配布パッケージを作成する処理や操作のこと</span><span class="s3">)</span><span class="s1">する必要があり、時間と労力を大きく費やすこととなった。</span><span class="s3"><br>
+</span><span class="s1">この問題を解決するため、ディストリビューターの手によりビルドして応用ソフトウエアを簡単に導入できるようにするためにパッケージが作られるようになった。</span><span class="s3"><br>
+</span><span class="s1">つまり、ディストリビューター側で応用ソフトウェアを簡単に実行させるように用意されたものがパッケージである。</span></p>
+</body>
+</html>
