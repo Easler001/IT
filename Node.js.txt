@@ -57,8 +57,24 @@
     <p>Node.jsのバージョン確認と指定</p>
 
     <p>nodebrew lsで使用バージョンが確認できる<br>
-        ☆ポイント current:noneと表示された場合は、使用するNode.JSのバージョンが指定されていない状態を指す☆</p>
+        ☆ポイント current:noneと表示された場合は、使用するNode.JSのバージョンが指定されていない状態を指す☆<br>
+        →nodeとコマンド入力すると、REPLと言うターミナル上でNode.jsを使用できるようになる。 ctrl+cでREPLモードは解除される。</p>
 
-    <p>バージョン指定:nodebrew use 16.1.1←数字は実際のバージョンの一例</p>
+    <p>バージョン指定:nodebrew use 16.1.1←数字は実際のバージョンの一例　使うNode.jsのバージョンを切り替えられる</p>
+    <p>☆Node.jsは行う行程によってバージョンを変えることがある!☆</p>
+
+    <p>nodebrewのパスを自動で通すようにする</p>
+    <p>この段階でターミナルを閉じると初期化されてしまい、毎回上述したexport PATH=$HOME/.nodebrew/current/bin:$PATH<br>
+        を入力しなければならないのでこれを解消する</p>
+
+    <p>1.touch .zshrcと入力  ※ touchと.の間は１マス間を開けないと認識されない!</p>
+    <p>2.vi .zshrcと入力　※上述の通り１マス開ける!</p>
+    <p>3.iを入力すると編集モードになる(INSERTと表示される)→export PATH=$HOME/.nodebrew/current/bin:$PATHをコピペ、escキーを押す</p>
+    <p>4.:wqと入力、enterでターミナルに戻れる</p>
+    <p>5.ターミナル⇨環境設定→コマンドを実行にチェックマーク</p>
+    <p>6.ターミナルを再起動して node -v やnodebrew -vでバージョンを確認したり 
+        nodebrew lsできるか確認</p>
+
+
 </body>
 </html>
