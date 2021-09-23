@@ -1,79 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.js 導入まとめ</title>
-</head>
-<body>
-    <h1>Node.js 導入まとめ</h1>
-    <p>Node.jsとは<br>
+
+    Node.js 導入まとめ
+    Node.jsとは
        サーバーサイド(ユーザーの視覚的ではない部分(裏側)の部分の処理をしているプログラミング)で動くJavaScript<br>
-    </p>
+    
 
-    <p>導入(環境構築)</p>
+    導入(環境構築)
 
-    <p>Node.jsはHTML、CSS、 JSと違って環境構築しないといけない。(デフォルトで作成されているわけではないのでその環境を作らないといけない。)</p>
+    Node.jsはHTML、CSS、 JSと違って環境構築しないといけない。(デフォルトで作成されているわけではないのでその環境を作らないといけない。)
 
-    <p>使用ツール…Nodebrew(Node.jsをインストールするだけでなく、バージョン管理することもできるツール)</p>
-    <p>※Homebrewを使用するという方法もあるが、Node.jsを使うだけなら使わなくていい!</p>
+    使用ツール…Nodebrew(Node.jsをインストールするだけでなく、バージョン管理することもできるツール)
+    ※Homebrewを使用するという方法もあるが、Node.jsを使うだけなら使わなくていい!
 
-    <p>①公式HPにアクセス→GitHubのページがあるのでジャンプ。(同時進行でターミナル起動)</p>
+    ①公式HPにアクセス→GitHubのページがあるのでジャンプ。(同時進行でターミナル起動)
 
-    <p>GitHubページをスクロールすると、<br>
-        README.md<br>
-        nodebrew<br>
-        <br>
-        <br>
-        Install<br>
-        Install with curl.<br>
-        <br>
-        $ curl -L git.io/nodebrew | perl - setup←これをコピーする!!<br>
-        Or, download and setup.</p>
+    GitHubページをスクロールすると、
+        README.md
+        nodebrew
+        
 
-    <p>②　①でコピーしたものを(curl -L git.io/nodebrew | perl - setup)ターミナルにペーストする!</p>
-    <p>☆ポイント☆curlというコマンドは、httpリクエストを通してサーバーにアクセスしてダウンロード/送るコマンド</p>
-    <p>入力すると、データがぞろぞろ表示されていく。すると…<br>
-        ========================================<br>
-        Export a path to nodebrew:<br>
-         <br>
-        export PATH=$HOME/.nodebrew/current/bin:$PATH<br>
-        ========================================<br>
+        Install
+        Install with curl.
+        
+        $ curl -L git.io/nodebrew | perl - setup←これをコピーする!!
+        Or, download and setup.
+
+    ②　①でコピーしたものを(curl -L git.io/nodebrew | perl - setup)ターミナルにペーストする!
+    ☆ポイント☆curlというコマンドは、httpリクエストを通してサーバーにアクセスしてダウンロード/送るコマンド
+    入力すると、データがぞろぞろ表示されていく。すると…
+        ========================================
+        Export a path to nodebrew:
+         
+        export PATH=$HOME/.nodebrew/current/bin:$PATH
+        ========================================
         と言う感じに出てくる!
-       </p>
+       
 
-    <p>そうしたら、上で出てきたexport PATH=$HOME/.nodebrew/current/bin:$PATHを<br>
-       そのままターミナル上に貼り付ける</p>
-    <p>☆ポイント☆ここでコピペしたモノは、Nodebrewのパスを通している。</p>
+    そうしたら、上で出てきたexport PATH=$HOME/.nodebrew/current/bin:$PATHを
+       そのままターミナル上に貼り付ける
+    ☆ポイント☆ここでコピペしたモノは、Nodebrewのパスを通している。
 
-    <p>③Nodebrewを使ってNode.jsをインストールする</p>
+    ③Nodebrewを使ってNode.jsをインストールする
 
-    <p>上述のGitHubのページからnodebrew install-binaryを見つけてインストール<br>
-       コマンドは2パターン<br>
-       nodebrew install-binary latest…一番新しいバージョン<br>
-       nodebrew install-binary stable…安定版の中で一番新しいバージョン(初心者はこっち推奨)</p>
+    上述のGitHubのページからnodebrew install-binaryを見つけてインストール
+       コマンドは2パターン
+       nodebrew install-binary latest…一番新しいバージョン
+       nodebrew install-binary stable…安定版の中で一番新しいバージョン(初心者はこっち推奨)
 
-    <p>Node.jsのバージョン確認と指定</p>
+    Node.jsのバージョン確認と指定
 
-    <p>nodebrew lsで使用バージョンが確認できる<br>
-        ☆ポイント current:noneと表示された場合は、使用するNode.JSのバージョンが指定されていない状態を指す☆<br>
-        →nodeとコマンド入力すると、REPLと言うターミナル上でNode.jsを使用できるようになる。 ctrl+cでREPLモードは解除される。</p>
+    nodebrew lsで使用バージョンが確認できる
+        ☆ポイント current:noneと表示された場合は、使用するNode.JSのバージョンが指定されていない状態を指す☆
+        →nodeとコマンド入力すると、REPLと言うターミナル上でNode.jsを使用できるようになる。 ctrl+cでREPLモードは解除される。
 
-    <p>バージョン指定:nodebrew use 16.1.1←数字は実際のバージョンの一例　使うNode.jsのバージョンを切り替えられる</p>
-    <p>☆Node.jsは行う行程によってバージョンを変えることがある!☆</p>
+    バージョン指定:nodebrew use 16.1.1←数字は実際のバージョンの一例　使うNode.jsのバージョンを切り替えられる
+    ☆Node.jsは行う行程によってバージョンを変えることがある!☆
 
-    <p>nodebrewのパスを自動で通すようにする</p>
-    <p>この段階でターミナルを閉じると初期化されてしまい、毎回上述したexport PATH=$HOME/.nodebrew/current/bin:$PATH<br>
-        を入力しなければならないのでこれを解消する</p>
+    nodebrewのパスを自動で通すようにする
+    この段階でターミナルを閉じると初期化されてしまい、毎回上述したexport PATH=$HOME/.nodebrew/current/bin:$PATH
+        を入力しなければならないのでこれを解消する
 
-    <p>1.touch .zshrcと入力  ※ touchと.の間は１マス間を開けないと認識されない!</p>
-    <p>2.vi .zshrcと入力　※上述の通り１マス開ける!</p>
-    <p>3.iを入力すると編集モードになる(INSERTと表示される)→export PATH=$HOME/.nodebrew/current/bin:$PATHをコピペ、escキーを押す</p>
-    <p>4.:wqと入力、enterでターミナルに戻れる</p>
-    <p>5.ターミナル⇨環境設定→コマンドを実行にチェックマーク</p>
-    <p>6.ターミナルを再起動して node -v やnodebrew -vでバージョンを確認したり 
-        nodebrew lsできるか確認</p>
+    1.touch .zshrcと入力  ※ touchと.の間は１マス間を開けないと認識されない!
+    2.vi .zshrcと入力　※上述の通り１マス開ける!
+    3.iを入力すると編集モードになる(INSERTと表示される)→export PATH=$HOME/.nodebrew/current/bin:$PATHをコピペ、escキーを押す
+    4.:wqと入力、enterでターミナルに戻れる
+    5.ターミナル⇨環境設定→コマンドを実行にチェックマーク
+    6.ターミナルを再起動して node -v やnodebrew -vでバージョンを確認したり 
+        nodebrew lsできるか確認
 
 
 </body>
