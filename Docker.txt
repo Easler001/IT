@@ -35,4 +35,32 @@ Boot Camp…内蔵ストレージ内にWindowsパーティションを作り第2
 
 つまり、macOSとWindowsを同時に使用するか別々に使うかの違い。
 
+☆Dockerを使おう
 
+ここまでLinux環境で使うと書いてきたが、実際のところWindowsやmacOSでDockerの環境を使用することも出来る。
+方法は以下の通り。
+
+①仮想環境上のLinux上に手動でDockerをインストールする
+
+上記で説明したようなVirtualBpx等の仮想環境を構築するソフトウェアを用いてLinux環境を用意してその上に手動でDockerをインストールする。
+
+Windows(mac)の中にLinuxカーネル等入ったVirtualBoxを用意(組み込む)し、その場所でDocker自体をインストールする。
+
+
+②Docker Desktopを使用する
+
+Docker DesktopはWindows、mac向けのソフトウェア。
+これには上述していたLinuxカーネルの仮想環境を構築する機能が内包されている。
+つまり、Linuxの仮想環境もコンテナも全てコミコミで入っていてそれがWindowsやmacで使えると言う感じ。
+
+さらに言えば、仮想環境構築用のソフトを使う手間が省ける!
+
+②についての方法
+PCのプロセッサの確認。(macbook以外ならほぼ100%Intelcoreのはず。macbookは最新型ならappleシリコンになってるので各自確認。ちなみにこのPCはIntelcore i9)
+
+(念の為確認方法　macなら左上appleマークからこのmacについてで確認可能。windowsはスタート→設定→システム→バージョン情報)
+
+確認できたらDocker Desktopのページにアクセスし前述にて確認したプロセッサを選択し、ダウンロード開始。
+(https://www.docker.com/products/docker-desktop)
+
+ダウンロード終了後
